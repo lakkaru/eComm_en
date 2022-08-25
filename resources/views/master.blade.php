@@ -15,14 +15,29 @@
     <title>eComm_en</title>
 </head>
 <body>
-
-    <script>
+    {{View::make('header')}}
+    @yield('content')
+    {{View::make('footer')}}
+    {{-- <script>
         $(document).ready (function(){
             $("button").click (function(){
                 alert('All Set')
             })
-        })
-    </script>
+        }) 
+    </script> --}}
     
 </body>
+
+<style>
+    .custom_login{
+        height: 500px;
+        padding-top: 100px;
+    }
+    img.slider_img{
+        height: 400px !important;
+    }
+    .custom_product{
+        height: 600px;
+    }
+</style>
 </html>
